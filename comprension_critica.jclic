@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="comprension_critica" version="0.1.3">
+ <settings>
+  <title>comprensión crítica</title>
+  <revision description="created" date="4/30/24" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="caperucita" />
+  <item name="completa" />
+ </sequence>
+ <activities>
+  <activity class="@text.Order" name="caperucita" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style />
+     <p>Organiza las palabras.</p>
+    </cell>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99FF99" />
+     </style>
+     <p>Caperucita Roja</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="lobo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="start" file="ng1-nes-twist-of-fate-comeco-de-fase.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen maxTime="11">
+    <style />
+    <p>–Caperucita, ¿dónde vive exactamente tu abuela?&#xD;</p>
+    <p>–Su casa queda a no menos de un cuarto de hora&#xD;</p>
+    <p>de aquí, en el bosque; justo debajo de los tres árboles&#xD;</p>
+    <p>de roble. La casa tiene un seto de castaños. Con&#xD;</p>
+    <p>seguridad que conoces el lugar –comentó Caperucita.&#xD;</p>
+    <p>El lobo entonces pensó: “No cabe duda de que&#xD;</p>
+    <p>aquí tengo un buen manjar. Sin embargo, debo&#xD;</p>
+    <p>proceder con cautela”. Así que dijo a la niña:&#xD;</p>
+    <p>–Oye Caperucita: ¿has visto los capullos que&#xD;</p>
+    <p>florecen en el bosque?, ¿por qué no les das una&#xD;</p>
+    <p>mirada? Con seguridad que tampoco has oído los&#xD;</p>
+    <p>cantos tan lindos de los pajaritos. Caminas como si&#xD;</p>
+    <p>estuvieras yendo a la escuela. ¡Ay, qué bellezas las que&#xD;</p>
+    <p>se ven en el bosque!</p>
+   </prevScreen>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" tabWidth="12" size="11" bold="false" italic="false" />
+    <section>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <target>–</target>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">Caperucita,</target>
+      <text family="Times New Roman" size="14" bold="true"> ¿dónde vive exactamente tu abuela?</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">–Su casa queda a no menos de un </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">cuarto</target>
+      <text family="Times New Roman" size="14" bold="true"> de hora</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">de aquí, en el </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">bosque;</target>
+      <text family="Times New Roman" size="14" bold="true"> justo debajo de los tres árboles</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">de </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">roble.</target>
+      <text family="Times New Roman" size="14" bold="true"> La casa tiene un seto de </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">castaños.</target>
+      <text family="Times New Roman" size="14" bold="true"> Con</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">seguridad que conoces el lugar –comentó Caperucita.</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">El lobo </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">entonces</target>
+      <text family="Times New Roman" size="14" bold="true"> pensó: “No cabe duda de que</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">aquí tengo un buen </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">manjar.</target>
+      <text family="Times New Roman" size="14" bold="true"> Sin embargo, debo</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">proceder con cautela”. Así que dijo a la niña:</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">–Oye </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">Caperucita:</target>
+      <text family="Times New Roman" size="14" bold="true"> ¿has visto los capullos que</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">florecen en el </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">bosque?,</target>
+      <text family="Times New Roman" size="14" bold="true"> ¿por qué no les das una</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">mirada? Con </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">seguridad</target>
+      <text family="Times New Roman" size="14" bold="true"> que tampoco has oído los</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">cantos tan lindos de los </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">pajaritos.</target>
+      <text family="Times New Roman" size="14" bold="true"> Caminas como si</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">estuvieras </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">yendo</target>
+      <text family="Times New Roman" size="14" bold="true"> a la escuela. ¡Ay, qué </text>
+      <target name="target" foreground="0x0000FF" target="true" family="Times New Roman" size="14" bold="true">bellezas</target>
+      <text family="Times New Roman" size="14" bold="true"> las que</text>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12">
+      <text family="Times New Roman" size="14" bold="true">se ven en el bosque!</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" checkCase="true" />
+  </activity>
+  <activity class="@text.Complete" name="completa" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style />
+     <p>Lee el texto inicial y completa el siguiente escribiendo las frases que faltan, ten en cuenta la orografía.</p>
+    </cell>
+    <cell type="initial">
+     <style />
+     <p>Hansel y Gretel </p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="hans.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen maxTime="11">
+    <style />
+    <p>Hansel y Gretel lo siguieron hasta&#xD;</p>
+    <p>que el pájaro llegó a una casita y se posó en el&#xD;</p>
+    <p>tejado; y cuando los niños llegaron se dieron&#xD;</p>
+    <p>cuenta de que la casita estaba hecha de pan, el tejado de pastel, y las ventanas de azúcar transparente.&#xD;</p>
+    <p>–¡Comeremos de todo ésto. Qué banquete el que nos espera! –dijo Hansel–, yo me comeré un pedazo de techo; cómete tú un poco de la ventana, te sabrá muy dulce.&#xD;</p>
+    <p>Hansel se empinó y cogió un pedazo de techo, sólo para ver cómo sabía; Gretel, por su parte, le dio un mordisco a la ventana. Entonces salió una vocecilla del interior de la casa:&#xD;</p>
+    <p>–Quién come, quién come, ¿quién se come mi casita?</p>
+   </prevScreen>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="11" bold="false" italic="false" />
+    <section>
+     <p>
+      <target name="target" foreground="0x0000FF" target="true" size="14">Hansel y Gretel</target>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false"> lo siguieron</text>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false"> hasta que el pájaro llegó a una casita y se posó en el tejado; y cuando los niños llegaron se dieron cuenta de que la casita estaba hecha de pan, el tejado de pastel, y las ventanas de azúcar transparente.</text>
+     </p>
+     <p />
+     <p>
+      <target name="target" foreground="0x0000FF" target="true" size="14">–¡Comeremos de todo ésto.</target>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false"> Qué banquete el que nos espera! –dijo Hansel–, yo me comeré un pedazo de techo; cómete tú un poco de la ventana, te sabrá muy dulce.</text>
+     </p>
+     <p />
+     <p>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false">Hansel </text>
+      <target name="target" foreground="0x0000FF" target="true" size="14">se empinó y cogió un pedazo de techo</target>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false">, sólo para ver cómo sabía; Gretel, por su parte, le dio un mordisco a la ventana. Entonces salió una vocecilla del interior de la casa:</text>
+     </p>
+     <p>
+      <text name="default" family="Times New Roman" background="0xFFFFFF" tabWidth="12" size="14" bold="false" italic="false">–Quién come, quién come, </text>
+      <target name="target" foreground="0x0000FF" target="true" size="14">¿quién se come mi casita?</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" checkCase="true" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ng1-nes-twist-of-fate-comeco-de-fase.mp3" file="ng1-nes-twist-of-fate-comeco-de-fase.mp3" />
+  <media name="hans.png" file="hans.png" />
+  <media name="lobo.png" file="lobo.png" />
+ </mediaBag>
+</JClicProject>
+
